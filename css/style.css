@@ -4,6 +4,50 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .flex-container{
     display: flex;
+}
+
+.side-bar {
+    width: 30px;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: black;
+
+}
+
+.premium {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: calc(100% - 30px);
+    height: 50px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    z-index: 99;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+    margin-right: 10px;
+
+    border: 1px solid white;
+    border-radius: 1.5em;
+
+    font-size: 8px;
+    padding: .8em 2.5em;
+    color: white;
 }
