@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bootify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -19,30 +22,78 @@
 
             <ul>
 
-                <li>
+                <li class="logo">
                     <img src="img/logo-small.svg" alt="logo spotify">
+                    <h1 class="hidden">Spotify</h1>
                 </li>
 
                 <li>
                     <a href="#!">
                         <img src="img/home.svg" alt="">
+                        <p class="hidden">Home</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="#!">
                         <img src="img/search.svg" alt="">
-                        
+                        <p class="hidden">Cerca</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="#!">
                         <img src="img/libreria.svg" alt="">
+                        <p class="hidden">La Tua Libreria</p>
                     </a>
                 </li>
 
+                <li>
+                    <ul class="playlist hidden">
+                        <li>
+                            <h2>PLAYLIST</h2>
+                        </li>
+        
+                        <li>
+                            <a href="#!">
+                                <span class="btn-plus"><i class="fas fa-plus-square"></i></span>
+                                <span class="new-playlist">Crea Playlist</span>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+        
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+ 
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+ 
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li>
+ 
+                        <li>
+                            <a href="#!">Nome playlist</a>   
+                        </li> 
+        
+                    </ul>
+                </li>
+
             </ul>
+
 
 
             <ul>
@@ -50,12 +101,18 @@
                 <li>
                     <a href="#!">
                         <img src="img/download.svg" alt="">
+                        <p class="hidden">Installa App</p>
                     </a>
+
+                    
                 </li>
 
+                
+                
                 <li>
                     <a href="#!">
                         <img src="img/profile.svg" alt="">
+                        <h2 class="hidden">Jhon Doe</h2>
                     </a>
                 </li>
 
@@ -240,72 +297,93 @@
                 
     </div>
 
-    <footer class="">
+    <footer>
 
-        <ul class="footer-left">
-            <li>
+        <div class="footer-left">
+            <div>
+
                 <a href="#!">
                     <img src="img/sinister.jpeg" alt="">
                 </a>
-            </li>
+            </div>
+        
 
-            <li class="text-left">        
+            <div>
+
                 <a href=""><h2>Sinister</h2></a>
                 <a href=""><p>Nome Brano</p></a>  
-            </li>
+            </div>
+        
 
-            <li class="left-icons">
+            <div class="left-icons">
                 <a href=""><i class="far fa-heart"></i></a>
                 <a href=""><i class="far fa-folder"></i></a>
-            </li>
 
-        </ul>
+            </div>
+        </div>
+            
 
-        <ul class="footer-center">
+        
 
-            <li>
-                <ul class="footer-center-up">
-                    <li><button><i class="fas fa-random"></i></button></li>
+        <div class="footer-center">
+            <div class="footer-center-up">
 
-                    <li><button><i class="fas fa-step-backward"></i></button></li>
+                <button><i class="fas fa-random"></i></button>
+        
+                <button><i class="fas fa-step-backward"></i></button>
+        
+                <button><i class="far fa-play-circle"></i></button>
+        
+                <button><i class="fas fa-step-forward"></i></button>
+        
+                <button><i class="fas fa-redo-alt"></i></button>
+            </div>
+    
+            
+    
+            <div class="footer-center-down">
 
-                    <li><button><i class="far fa-play-circle"></i></button></li>
+                <p class="timer">0:45</p>
 
-                    <li><button><i class="fas fa-step-forward"></i></button></li>
+                <div class="progress-bar">
+                    <span class="white-span"></span><span class="grey-span"></span>
+                </div>
 
-                    <li><button><i class="fas fa-redo-alt"></i></button></li>
-                </ul>
-            </li>
+                <p class="timer">3:26</p>
+            </div>
+    
+        </div>
 
-            <li>
-                <ul>
-                    <li class="time">0:25</li>
+        
+        
 
-                    <li class="progress-bar"><span class="white-span"></span><span class="grey-span"></span></li>
+        <div class="footer-right">
+            <button>
 
-                    <li class="time">4:35</li>
-                </ul>
-            </li>
-
-        </ul>
-
-        <ul class="footer-right">
-
-            <li>
-                <i class="fas fa-list-ul"></i>
-            </li>
-
-            <li>
+                <i class="fas fa-list"></i>
+            </button>
+        
+    
+            <button>
                 <i class="fas fa-desktop"></i>
-            </li>
 
-            <li>
+            </button>
+        
+    
+            <button>
                 <i class="fas fa-volume-up"></i>
-            </li>
 
-            <li class="progress-bar"><span class="white-span"></span><span class="grey-span"></span></li>
+            </button>
+        
+    
+            <div class="volume">
+                <span class="white-span"></span><span class="grey-span"></span>
+            </div>
 
-        </ul>
+        </div>
+        
+
+        
 
     </footer>
 
