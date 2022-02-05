@@ -20,7 +20,7 @@ a {
 
 .side-bar {
     width: 30px;
-    height: 90vh;
+    height: calc(100vh - 80px);
 
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ a {
 /* ---------- */
 
 .main-container {
-    height: 90vh;
+    height: calc(100vh - 80px);
     flex: 1 1 auto;
     padding-top: 50px;
     background-color: #141922;
@@ -141,4 +141,131 @@ main p {
 
 .popular img {
     border-radius: 50%;
+}
+
+/* SEZIONE FOOTER */
+
+footer {
+    height: 80px;
+    padding: 0 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    background-color: #282828;
+    
+}
+
+footer > ul {
+    flex: 0 1 calc(100% / 3 );
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* margin: 20px 0; */
+
+}
+
+.footer-left li {
+
+    padding-right: 5px;
+}
+
+.footer-left img {
+    width: 26px;
+}
+
+footer h2 {
+    font-size: 12px;
+    color: white;
+}
+
+footer p {
+    font-size: 8px;
+    color: #6c6f74;
+}
+
+.footer-left .left-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-icons a{
+    flex: 0 0 12.5px;
+}
+
+.footer-left i {
+    /* font-size: 10px; */
+    color: #6c6f74;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    
+    /* margin-top: 10px; */
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+
+.footer-center ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-center-up {
+    width: 180px;
+    margin: 0 auto;
+    
+}
+
+.footer-center > li:first-child {
+    max-width: 180px;
+    flex: 0 0 auto;
+}
+
+.footer-center .fa-play-circle {
+    /* font-size: 20px; */
+}
+
+.footer-center .time {
+    /* font-size: 7px; */
+    color: white;
+}
+
+.progress-bar {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    vertical-align: middle;
+}
+
+.white-span {
+    width: 20%;
+    border: 1px solid white;
+}
+
+.grey-span {
+    width: 80%;
+    border: 1px solid #5a5a5a;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right .progress-bar {
+    max-width: 80px;
 }
