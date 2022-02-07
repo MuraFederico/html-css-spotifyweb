@@ -20,15 +20,16 @@
 
         <div class="side-bar">
 
-            <ul>
+            <ul class="upper-list">
 
                 <li class="logo">
                     <img src="img/logo-small.svg" alt="logo spotify">
                     <h1 class="hidden">Spotify</h1>
                 </li>
 
-                <li>
+                <li class="home">
                     <a href="#!">
+
                         <img src="img/home.svg" alt="">
                         <p class="hidden">Home</p>
                     </a>
@@ -48,14 +49,14 @@
                     </a>
                 </li>
 
-                <li>
-                    <ul class="playlist hidden">
+                <li class="playlist">
+                    <ul class="hidden">
                         <li>
                             <h2>PLAYLIST</h2>
                         </li>
         
                         <li>
-                            <a href="#!">
+                            <a href="#!" class="btn-container">
                                 <span class="btn-plus"><i class="fas fa-plus-square"></i></span>
                                 <span class="new-playlist">Crea Playlist</span>
                             </a>
@@ -96,7 +97,7 @@
 
 
 
-            <ul>
+            <ul class="lower-list">
 
                 <li>
                     <a href="#!">
@@ -111,7 +112,9 @@
                 
                 <li>
                     <a href="#!">
-                        <img src="img/profile.svg" alt="">
+                        <div class="profile-bg">
+                            <img src="img/profile.svg" alt="">
+                        </div>
                         <h2 class="hidden">Jhon Doe</h2>
                     </a>
                 </li>
@@ -134,6 +137,7 @@
                         <a href="#!">
                             IN EVIDENZA
                         </a>
+                        <div class="highlight-line"></div>
 
                     </li>
 
@@ -190,7 +194,11 @@
                     <ul>
                         <li>
                             <a href="#!">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/metal_lifting.jpg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Heavy Metal</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -198,7 +206,11 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/stranger.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/stranger.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Stranger Things Vol. 1(a Netflix Original Series Soundtrack)</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -206,7 +218,11 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/aquietplace.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/aquietplace.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>A Quiet Place</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -214,7 +230,11 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/split.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/split.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Split</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -222,7 +242,11 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/cure.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/cure.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>A Cure for Wellness</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -230,7 +254,11 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/sinister.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/sinister.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Sinister</h2>
                                 <p>Subtitle</p>
                             </a>
@@ -249,14 +277,22 @@
                     <ul>
                         <li>
                             <a href="#1">
-                                <img src="img/radar.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/radar.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Release Radar</h2>
                             </a>
                         </li>
 
                         <li>
                             <a href="#1">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <div class="img-container">
+                                    <img class="album" src="img/mixdaily.jpeg" alt="">
+                                    <i class="far fa-play-circle player"></i>
+                                </div>
+
                                 <h2>Daily Mix 1</h2>
                             </a>
                         </li>
@@ -275,14 +311,14 @@
 
                         <li>
                             <a href="#!">
-                                <img src="img/youg.jpeg" alt="">
+                                <img class="album" src="img/youg.jpeg" alt="">
                                 <h2>Lana Del Ray</h2>
                             </a>
                         </li>
 
                         <li>
                             <a href="#!">
-                                <img src="img/einaudi.jpeg" alt="">
+                                <img class="album" src="img/einaudi.jpeg" alt="">
                                 <h2>Ludovico Einaudi</h2>
                             </a>
                         </li>
@@ -332,7 +368,7 @@
         
                 <button><i class="fas fa-step-backward"></i></button>
         
-                <button><i class="far fa-play-circle"></i></button>
+                <button><i class="far fa-play-circle player"></i></button>
         
                 <button><i class="fas fa-step-forward"></i></button>
         
@@ -345,9 +381,9 @@
 
                 <p class="timer">0:45</p>
 
-                <div class="progress-bar">
-                    <span class="white-span"></span><span class="grey-span"></span>
-                </div>
+                <a class="progress-bar">
+                    <span class="white-span"></span><span class="dot"></span><span class="grey-span"></span>
+                </a>
 
                 <p class="timer">3:26</p>
             </div>
@@ -376,9 +412,9 @@
             </button>
         
     
-            <div class="volume">
-                <span class="white-span"></span><span class="grey-span"></span>
-            </div>
+            <a class="volume">
+                <span class="white-span"></span><span class="dot"></span><span class="grey-span"></span>
+            </a>
 
         </div>
         
